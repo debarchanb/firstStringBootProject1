@@ -1,0 +1,29 @@
+package com.example.demo;
+
+import org.springframework.stereotype.Component;
+
+@Component("lap1")
+public class laptop {
+		private int lid;
+		private String brand;
+		public int getLid() {
+			return lid;
+		}
+		public void setLid(int lid) {
+			this.lid = lid;
+		}
+		@Override
+		public String toString() {
+			return "laptop [lid=" + lid + ", brand=" + brand + "]";
+		}
+		public String getBrand() {
+			return brand;
+		}
+		public void setBrand(String brand) {
+			this.brand = brand;
+		}
+		
+		public void compile() {
+			System.out.println("compiling");
+		}
+}
